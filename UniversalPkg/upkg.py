@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
-import argparse
-import platform
-import system
+import argparse     # Needed for program earguments.
+import os           # Needed for check EUID (root or not).
+import platform     # Needed for operating system detection.
+import system       # Needed for parsing package manager commands.
 
 # Check root.
 if os.geteuid() != 0:
