@@ -18,6 +18,8 @@ win = platform.win32_ver()
 #     print("You run Java?\n'Cool'")
 if "mac" in mac:
   exit("This software only works with GNU/Linux.\nSorry.")
+  # system(brew update)
+  # system(port -v update)
 if "win" in win:
   exit("This software only works with GNU/Linux.\nSorry.")
 # print(dist)
