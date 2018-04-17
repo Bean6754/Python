@@ -11,10 +11,11 @@ if os.geteuid() != 0:
 # dist = platform.dist() - Depreciated since Python 2.6.
 dist = platform.linux_distribution()
 # jar = platform.java_ver()
+mac = platform.mac_ver()
 win = platform.win32_ver()
-mac = 
 
-
+# if "jar" in jar:
+#     print("You run Java?\n'Cool'")
 if "mac" in mac:
   exit("This software only works with GNU/Linux.\nSorry.")
 if "win" in win:
